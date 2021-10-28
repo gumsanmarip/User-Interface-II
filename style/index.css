@@ -1,1 +1,109 @@
-/* Add CSS styling here */
+/*CSS Reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: mulish;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    max-width:100%;
+    /* border:1px solid grey;  */
+}
+
+/*General Styles*/
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:1.8rem;
+    line-height:1.5;
+    color:#4f4f4f;
+    background-color:#FBFFFB;
+    font-family: 'Mulish', sans-serif;
+}
+.background{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    color:#a52a2a;
+    font-size: 10rem;
+    font-family: 'Mulish', sans-serif;
+}
+h2{
+    color: #002a89    ;
+    font-size: 20rem;
+}
+h3{
+    color: #993366;
+    font-size: 15rem;
+}
+
+/* project section style */
+#project{
+    height:90vh;
+    background-image: url('../images/lexus.jpg');
+    background-position: bottom;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+#project button{
+    border:2px solid ;
+    color:#e0ca43;
+    background-color:#000f30;
+    transition:2s;
+}
+#project button:hover{
+    color:#fff;
+    background-color:#000f30    ;
+    border:2px solid #fff;
+}
+/* gallery section style */
+#gallery{
+    padding-bottom
+}
+.lfa{
+    background-image:url('../images/lfa.jpg');
+}
+.text{
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+
+}
+.
+
+
+
+
+
+/*footer section styles*/
