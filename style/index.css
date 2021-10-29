@@ -16,94 +16,138 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	font-size: 100%;
-	font: mulish;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: mulish;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-
-*{
-    box-sizing: border-box;
-    padding:0;
-    margin:0;
-    max-width:100%;
-    /* border:1px solid grey;  */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
 }
-
 /*General Styles*/
-html{
-    font-size:62.5%;
+html {
+  font-size: 62.5%;
 }
-body{
-    font-size:1.8rem;
-    line-height:1.5;
-    color:#4f4f4f;
-    background-color:#FBFFFB;
-    font-family: 'Mulish', sans-serif;
+body {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #4f4f4f;
+  background-color:turquoise;
+  font-family: "Mulish", sans-serif;
 }
-.background{
+.background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+h1 {
+  color: #a52a2a;
+  font-size: 5rem;
+  font-family: "Mulish", sans-serif;
+}
+h2 {
+  color: #d8c03c;
+  font-size: 10rem;
+}
+h3 {
+  color: #5c96fa;
+  font-size: 2rem;
+}
+/* header section styles */
+nav{
+    display:flex;
+    justify-content: space-between;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index: 999; /*everything should scroll behind this*/
+    background-color:rgba(255, 255, 255, 0.8);
+}
+.links{
+    width:50%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* project section style */
+#project {
+  height: 35vh;
+  background-image: url("../images/lexus.jpg");
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5%;
+  flex-direction: column;
+}
+#project button {
+  color: #e0ca43;
+  background-color: white;
+  text-align: center;
+  width: 80px;
+  height: 30px;
+}
+/* gallery section style */
+.container{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;   
+}
+#gallery .bg-img{ 
+  padding-bottom: 0;
+}
+.text {
+    padding: 5%;
+    display: flex;
+    align-items: flex-end;
+}
+.bg-img{
+    flex-direction: row;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    width: 400px;
+    height: 200px;
+    max-width: 400px;
+    max-height: 200px;
 }
-h1{
-    color:#a52a2a;
-    font-size: 10rem;
-    font-family: 'Mulish', sans-serif;
+.lfa {
+    background-image: url('../images/lfa.jpg');
 }
-h2{
-    color: #002a89    ;
-    font-size: 20rem;
+.lc500 {
+    background-image: url('../images/lc500.jpg');
 }
-h3{
-    color: #993366;
-    font-size: 15rem;
+.isf {
+    background-image: url('../images/isf.JPG');
 }
-
-/* project section style */
-#project{
-    height:90vh;
-    background-image: url('../images/lexus.jpg');
-    background-position: bottom;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    text-align:center;
+.rcf {
+    background-image: url('../images/rcf.jpg');
 }
-#project button{
-    border:2px solid ;
-    color:#e0ca43;
-    background-color:#000f30;
-    transition:2s;
+.gsf {
+    background-image: url('../images/gsf.jpg');
+  
 }
-#project button:hover{
-    color:#fff;
-    background-color:#000f30    ;
-    border:2px solid #fff;
+.ls400 {
+    background-image: url('../images/ls400.jpg');
 }
-/* gallery section style */
-#gallery{
-    padding-bottom
-}
-.lfa{
-    background-image:url('../images/lfa.jpg');
-}
-.text{
-    padding: 5%;
-    display: flex;
-    justify-content: center;
-
-}
-.
-
-
-
-
-
 /*footer section styles*/
+.footer{
+    background-color: #d8c03c;
+    display: flex;
+    flex-wrap: wrap;
+    color:#e0ca43;
+    margin: 50%;
+}
+#contact button {
+    justify-content: center;
+}
