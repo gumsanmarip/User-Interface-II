@@ -1,1 +1,150 @@
-/* Add CSS styling here */
+/*CSS Reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: mulish;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+/*General Styles*/
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #4f4f4f;
+  background-color:#696969  ;
+  font-family: "Mulish", sans-serif;
+}
+.background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+h1 {
+  color: #a52a2a;
+  font-size: 5rem;
+  font-family: "Mulish", sans-serif;
+}
+h2 {
+  color: #d8c03c;
+  font-size: 10rem;
+}
+h3 {
+  color: #5c96fa;
+  font-size: 2rem;
+}
+/* header section styles */
+nav{
+    display:flex;
+    justify-content: space-between;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index: 999; /*everything should scroll behind this*/
+    background-color:rgba(255, 255, 255, 0.8);
+}
+.links{
+    width:50%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* project section style */
+#project {
+  height: 35vh;
+  background-image: url("../images/lexus.jpg");
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5%;
+  flex-direction: column;
+}
+#project button {
+  color: #e0ca43;
+  background-color: white;
+  text-align: center;
+  width: 80px;
+  height: 30px;
+}
+/* gallery section style */
+.container{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;   
+}
+#gallery .bg-img{ 
+  padding-bottom: 0;
+}
+.text {
+    padding: 5%;
+    display: flex;
+}
+.bg-img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 1%;
+    width: 400px;
+    height: 200px;
+    max-width: 400px;
+    max-height: 200px;
+}
+.lfa {
+    background-image: url('../images/lfa.jpg');
+}
+.lc500 {
+    background-image: url('../images/lc500.jpg');
+}
+.isf {
+    background-image: url('../images/isf.JPG');
+}
+.rcf {
+    background-image: url('../images/rcf.jpg');
+}
+.gsf {
+    background-image: url('../images/gsf.jpg');
+}
+.ls400 {
+    background-image: url('../images/ls400.jpg');
+}
+/*footer section styles*/
+footer{
+    background-color: #d8c03c;
+    color:#a52a2a;
+}
+#contact{
+    display: flex;
+    justify-content: space-evenly;
+}
