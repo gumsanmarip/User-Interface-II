@@ -41,7 +41,7 @@ body {
   font-size: 1.8rem;
   line-height: 1.5;
   color: #4f4f4f;
-  background-color:turquoise;
+  background-color:#696969  ;
   font-family: "Mulish", sans-serif;
 }
 .background {
@@ -101,7 +101,8 @@ nav{
 .container{
     display:flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
+    text-align: center;   
 }
 #gallery .bg-img{ 
   padding-bottom: 0;
@@ -109,13 +110,12 @@ nav{
 .text {
     padding: 5%;
     display: flex;
-    align-items: flex-end;
 }
 .bg-img{
-    flex-direction: row;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin: 1%;
     width: 400px;
     height: 200px;
     max-width: 400px;
@@ -135,19 +135,16 @@ nav{
 }
 .gsf {
     background-image: url('../images/gsf.jpg');
-  
 }
 .ls400 {
     background-image: url('../images/ls400.jpg');
 }
 /*footer section styles*/
-.footer{
+footer{
     background-color: #d8c03c;
-    display: flex;
-    flex-wrap: wrap;
-    color:#e0ca43;
-    margin: 50%;
+    color:#a52a2a;
 }
-#contact button {
-    justify-content: center;
+#contact{
+    display: flex;
+    justify-content: space-evenly;
 }
