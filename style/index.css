@@ -19,7 +19,7 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   font-size: 100%;
-  font: mulish;
+  font: inherit;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -40,37 +40,28 @@ html {
 body {
   font-size: 1.8rem;
   line-height: 1.5;
-  color: #4f4f4f;
-  background-color:#696969  ;
-  font-family: "Mulish", sans-serif;
+  background-color:white;
+  font-family: 'Open Sans', sans-serif;
 }
 .background {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-h1 {
-  color: #a52a2a;
-  font-size: 5rem;
-  font-family: "Mulish", sans-serif;
+h1, h2{
+  color:black
 }
-h2 {
-  color: #d8c03c;
-  font-size: 10rem;
-}
+/* blue #5c96fa*/
 h3 {
-  color: #5c96fa;
+  color: black
   font-size: 2rem;
+  font-weight: bold;
 }
 /* header section styles */
 nav{
     display:flex;
     justify-content: space-between;
-    position:fixed;
-    width:100%;
-    top:0;
-    z-index: 999; /*everything should scroll behind this*/
-    background-color:rgba(255, 255, 255, 0.8);
+    padding: 1%;
 }
 .links{
     width:50%;
@@ -80,36 +71,45 @@ nav{
 }
 /* project section style */
 #project {
-  height: 35vh;
-  background-image: url("../images/lexus.jpg");
-  background-position: bottom;
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 5%;
-  flex-direction: column;
 }
-#project button {
-  color: #e0ca43;
-  background-color: white;
-  text-align: center;
-  width: 80px;
-  height: 30px;
+.image-button { 
+  background-image: url("../images/lexus.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  color: white;
+  font-size: 40px;
+  width: 1200px;
+  height: 650px;
+  align-items: center;
+  line-height: 70px;
+  padding-bottom: 300px;
+}
+button {
+  background-color:white;
+  color: black;
+  padding: 5px 30px;
+  margin:0px;
+  border:2px solid transparent;
+}
+button:hover{
+  background-color:transparent;
+  color:#5c96fa;
+  
+}
+button a{
+  text-decoration: none;
+  color: inherit;
 }
 /* gallery section style */
 .container{
     display:flex;
+    flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    text-align: center;   
-}
-#gallery .bg-img{ 
-  padding-bottom: 0;
-}
-.text {
-    padding: 5%;
-    display: flex;
+    padding: 20px;  
+    text-align: center; 
 }
 .bg-img{
     background-repeat: no-repeat;
@@ -118,11 +118,11 @@ nav{
     margin: 1%;
     width: 400px;
     height: 200px;
-    max-width: 400px;
-    max-height: 200px;
+    max-width: 300px;
+    max-height: 300px;
 }
 .lfa {
-    background-image: url('../images/lfa.jpg');
+    background-image: url('../images/lfa1.jpg');
 }
 .lc500 {
     background-image: url('../images/lc500.jpg');
@@ -141,10 +141,89 @@ nav{
 }
 /*footer section styles*/
 footer{
-    background-color: #d8c03c;
-    color:#a52a2a;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+  padding: 20px;
+  text-align:left;
+  font-size: .8em;
+  color:white;
 }
-#contact{
+.copyright{
+  font-size: .7em;
+  padding-top: 150px;
+}
+
+/*Responsive Styles*/
+
+/*tablet view - 800px*/
+@media (max-width: 800px){
+  /*header section styles*/
+  nav{
     display: flex;
-    justify-content: space-evenly;
-}
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .links{
+    flex-direction: column;
+  }
+  /*project section styles*/
+  .image-button{
+    height: auto;
+  }
+}/*this closes my media query for 800px*/
+
+/*mobile view - 500px*/
+@media (max-width: 500px){
+  nav{
+      flex-wrap:wrap;
+      justify-content: center;
+      padding-bottom:1%;
+  }
+  .links{
+      width:100%;
+  }
+  /*about section styles*/
+  .container{
+      background-image:none;
+      background-color:white;
+      height:auto;
+      justify-content: center;
+      align-items: center;
+  }
+  #about div{
+      margin:0;
+      width:80%;
+      text-align:center;
+  }
+  /*Shop Section Styles*/
+   .container{
+       justify-content: center;
+       width:80%;
+   }
+   .text div{
+       width:100%;
+   }
+   .bg-img{
+       height:40vh;
+   }
+   .one{
+       order:1;
+   }
+   .two{
+       order:2;
+   }
+   .three{
+       order:3;
+   }
+   .four{
+       order:4;
+   }
+   .five{
+       order:5;
+   }
+   .six{
+       order:6;
+}/*this closes my media query for mobile*/
