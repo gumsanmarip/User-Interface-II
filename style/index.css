@@ -91,12 +91,11 @@ button {
   color: black;
   padding: 5px 30px;
   margin:0px;
-  border:2px solid transparent;
+  border: transparent;
 }
 button:hover{
   background-color:transparent;
   color:#5c96fa;
-  
 }
 button a{
   text-decoration: none;
@@ -178,52 +177,22 @@ footer{
 /*mobile view - 500px*/
 @media (max-width: 500px){
   nav{
-      flex-wrap:wrap;
-      justify-content: center;
       padding-bottom:1%;
   }
-  .links{
-      width:100%;
-  }
-  /*about section styles*/
-  .container{
-      background-image:none;
-      background-color:white;
-      height:auto;
-      justify-content: center;
-      align-items: center;
-  }
-  #about div{
-      margin:0;
-      width:80%;
-      text-align:center;
-  }
-  /*Shop Section Styles*/
-   .container{
-       justify-content: center;
-       width:80%;
-   }
-   .text div{
-       width:100%;
-   }
-   .bg-img{
-       height:40vh;
-   }
-   .one{
-       order:1;
-   }
-   .two{
-       order:2;
-   }
-   .three{
-       order:3;
-   }
-   .four{
-       order:4;
-   }
-   .five{
-       order:5;
-   }
-   .six{
-       order:6;
+/*project section styles*/
+.image-button { 
+  background-position: center;
+  font-size: 20px;
+  width: 70%;
+  padding-bottom: 300px;
+}
+/*gallery section styles*/
+.bg-img{
+  width: 15vh;
+  height: 15vh;
+}
+footer{
+  padding: 5px;
+  font-size: .5em;
+}
 }/*this closes my media query for mobile*/
